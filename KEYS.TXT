@@ -1,0 +1,19 @@
+Your public key
+a2bdef82f196b54c3025e425bef0e191
+
+Your private key
+4ea71e2fdbc47cb1dff5bca1599f602583be55be
+
+
+user: eduruiz333
+pass: Bl@B
+
+
+
+https://developer.marvel.com/docs#!/public/getCreatorCollection_get_0
+
+
+repo 
+https://github.com/iondrimba/marvel-api-explorer
+
+
