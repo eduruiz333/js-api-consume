@@ -1,6 +1,6 @@
 const marvel = {
     render:() => {
-        const urlAPI = 'https://gateway.marvel.com/v1/public/characters?ts=1&apikey=a2bdef82f196b54c3025e425bef0e191&hash=c525012accf61f39b0964d120aab9a6c';
+        const urlAPI = 'https://gateway.marvel.com/v1/public/characters?ts=1&apikey=a9ede7a730f33a8c23f8d8a18f99b686&hash=73621f0299923fc5dc40f14af8614930';
         const container = document.querySelector('#marvel-row');
         let contentHTML = '';
 

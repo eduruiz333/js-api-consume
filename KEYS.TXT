@@ -1,30 +1,29 @@
-Your public key
-a2bdef82f196b54c3025e425bef0e191
-
-Your private key
-4ea71e2fdbc47cb1dff5bca1599f602583be55be
-
-
-user: eduruiz333
-pass: Bl@B
-
-
-https://developer.marvel.com/account
-
-
-https://developer.marvel.com/docs#!/public/getCharacterIndividual_get_1
-
-
-Request URL: https://gateway.marvel.com:443/v1/public/characters?apikey=a2bdef82f196b54c3025e425bef0e191
-
-
 *******************************************
 https://www.youtube.com/watch?v=T_FyWCPOLIc
 *******************************************
 
-CHAVE  PRIVADA + PÚBLICA + PARÂMETRO 1
-14ea71e2fdbc47cb1dff5bca1599f602583be55bea2bdef82f196b54c3025e425bef0e191
+>>>> NOVA CONTA NA MARVEL (lugh333@gmail.com) <<<<
+user: marcosruiz333
+pass: Bl@B
 
-RASH GERADO
-c525012accf61f39b0964d120aab9a6c
+Your public key
+a9ede7a730f33a8c23f8d8a18f99b686
 
+Your private key
+68913d47c26b4f17fcfcc30f123929d38e35302b
+
+Request URL - OK (status 200)
+https://gateway.marvel.com:443/v1/public/characters?apikey=a9ede7a730f33a8c23f8d8a18f99b686
+
+
+EX: https://gateway.marvel.com/v1/public/characters?ts=1&apikey=XXX&hash=XXX
+
+API FINAL, FUNFANDO!
+https://gateway.marvel.com:443/v1/public/characters?ts=1&apikey=a9ede7a730f33a8c23f8d8a18f99b686
+
+
+
+ts = 1 + Priv K + pub k
+168913d47c26b4f17fcfcc30f123929d38e35302ba9ede7a730f33a8c23f8d8a18f99b686
+
+HASH: 73621f0299923fc5dc40f14af8614930
