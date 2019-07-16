@@ -12,7 +12,7 @@ pass: Bl@B
 https://developer.marvel.com/account
 
 
-https://developer.marvel.com/docs#!/public/getCreatorCollection_get_0
+https://developer.marvel.com/docs#!/public/getCharacterIndividual_get_1
 
 
 Request URL: https://gateway.marvel.com:443/v1/public/characters?apikey=a2bdef82f196b54c3025e425bef0e191
@@ -27,3 +27,4 @@ CHAVE  PRIVADA + PÚBLICA + PARÂMETRO 1
 
 RASH GERADO
 c525012accf61f39b0964d120aab9a6c
+
