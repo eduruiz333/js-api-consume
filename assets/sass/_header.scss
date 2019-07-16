@@ -1,0 +1,184 @@
+/* Header */
+
+// banner header
+.steps {
+  .header {
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 350px;
+    box-sizing: border-box;
+    background-size: cover;
+    padding-bottom: 70px;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    align-items: flex-end;
+
+    .logo-header {
+      a img {
+        width: 120px;
+      }
+    }
+  }
+
+  // Stepper
+  .md-stepper-horizontal {
+    display: table;
+    margin: 0 auto;
+    width: 80%;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 3px 8px -6px rgba(0,0,0,1);
+
+    i {
+      color: $white;
+      font-size: 14px;
+      margin-right: 0;
+    }
+
+    .md-step {
+      display: table-cell;
+      position: relative;
+      padding: 24px;
+      span {
+        display: none;
+      }
+
+      &:hover,
+      &:active {
+        background-color: rgba(0, 0, 0, 0.04);
+        &:first-child,
+        &:first-child:active{
+          border-top-left-radius: 50px;
+          border-bottom-left-radius: 50px;
+        }
+        &:last-child,
+        &:last-child:active {
+          border-top-right-radius: 50px;
+          border-bottom-right-radius: 50px;
+        }
+      }
+
+      &:active {
+        :active {
+          border-radius: 15% / 75%;
+        }
+      }
+
+      &:first-child:active {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+
+      &:last-child:active {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+
+      &:hover .md-step-circle {
+        background-color: $grayLight;
+      }
+
+      &:first-child .md-step-bar-left,
+      &:last-child .md-step-bar-right {
+        display: none;
+      }
+
+      .md-step-circle {
+        width: 30px;
+        height: 30px;
+        margin: 0 auto;
+        background-color: $grayLight;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 30px;
+        font-size: 16px;
+        font-weight: 600;
+        color: $white;
+      }
+
+      &.active .md-step-circle {
+        background-color: $success;
+      }
+
+      &.done {
+        .md-step-circle:before {
+          font-weight: 100;
+        }
+      }
+
+      &.editable {
+        .md-step-circle {
+          -moz-transform: scaleX(-1);
+          -o-transform: scaleX(-1);
+          -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+        }
+
+        .md-step-circle:before {
+          font-weight: 100;
+        }
+      }
+
+      .md-step-title {
+        margin-top: 16px;
+        font-size: 16px;
+        font-weight: 600;
+      }
+      .md-step-title,
+      .md-step-optional {
+        text-align: center;
+        color: rgba(0, 0, 0, .26);
+      }
+
+      &.active .md-step-title {
+        font-weight: 600;
+        color: rgba(0, 0, 0, .87);
+      }
+
+      .active.done .md-step-title,
+      .active.editable .md-step-title {
+        font-weight: 600;
+      }
+
+      .md-step-optional {
+        font-size: 12px;
+      }
+
+      &.active .md-step-optional {
+        color: rgba(0, 0, 0, .54);
+      }
+
+      .md-step-bar-left,
+      .md-step-bar-right {
+        position: absolute;
+        top: 36px;
+        height: 1px;
+        border-top: 2px solid $grayLight;
+      }
+
+      .md-step-bar-right {
+        right: 0;
+        left: 60%;
+        margin-left: 20px;
+      }
+
+      .md-step-bar-left {
+        left: 0;
+        right: 60%;
+        margin-right: 20px;
+      }
+    }
+
+
+    &.orange .md-step.active .md-step-circle {
+      background-color: $mainClr;
+    }
+    &.md-step.active .md-step-circle {
+      background-color: rgb(33, 150, 243);
+    }
+  }
+}
+
+
+
