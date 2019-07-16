@@ -9,11 +9,21 @@ user: eduruiz333
 pass: Bl@B
 
 
+https://developer.marvel.com/account
+
 
 https://developer.marvel.com/docs#!/public/getCreatorCollection_get_0
 
 
-repo 
-https://github.com/iondrimba/marvel-api-explorer
+Request URL: https://gateway.marvel.com:443/v1/public/characters?apikey=a2bdef82f196b54c3025e425bef0e191
 
 
+*******************************************
+https://www.youtube.com/watch?v=T_FyWCPOLIc
+*******************************************
+
+CHAVE  PRIVADA + PÚBLICA + PARÂMETRO 1
+14ea71e2fdbc47cb1dff5bca1599f602583be55bea2bdef82f196b54c3025e425bef0e191
+
+RASH GERADO
+c525012accf61f39b0964d120aab9a6c
