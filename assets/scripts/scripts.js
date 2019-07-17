@@ -9,13 +9,17 @@ const marvel = {
         .then((json) => {
             for (const hero of json.data.results) {
                 let urlHero = hero.urls[0].url;
+
                 contentHTML += `
                     <div class="col-12 mx-auto">
                         <a href="${urlHero}" target="_blank">
                             <img src="${hero.thumbnail.path}.${hero.thumbnail.extension}" alt="${hero.name}" class="img-thumbnail">
                         </a>
                         <h3 class="title">${hero.name}</h3>
-                    </div>`;
+                        <p>${hero.description}</p>
+                    </div>
+                `;
+
             }
             container.innerHTML = contentHTML;
         })

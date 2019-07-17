@@ -1,21 +1,56 @@
 // xs — Extra Small Screens
 @media (min-width: 320px) {
-  
+  #marvel-row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+
+    .card-body {
+      padding: 0;
+    }
+
+    div {
+      flex: 0 0 100%;
+      padding: 10px 5px;
+      text-align: center;
+
+      h3 {
+        font-size: 1.3rem;
+      }
+
+      a img {
+        width: 200px;
+        margin-bottom: 15px;
+      }
+    }
+  }
 }
 
 // s — Small Screens
 @media (min-width: 640px) {
-
+  #marvel-row {
+    div {
+      flex: 0 0 50%;
+    }
+  }
 }
 
 // m — Medium Screens
 @media (min-width: 960px) {
+  #marvel-row {
+    div {
+      a img {
+        width: 400px;
+      }
+    }
 
+  }
 }
 
 // l — Large Screens
 @media (min-width: 1200px) {
-  
+
 }
 
 // xl — Extra Large Screens

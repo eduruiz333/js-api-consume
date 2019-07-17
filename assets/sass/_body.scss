@@ -1,4 +1,4 @@
-/** Global **/
+  /** Global **/
 html,
 body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -19,91 +19,13 @@ body {
   .container {
     background-color: $white;
   }
+}
 
-  //Form fileds
-  .custom-file-control,
-  .form-control,
-  .is-focused .custom-file-control,
-  .is-focused .form-control {
-    box-shadow: none !important;
-    background-image: linear-gradient(0deg, #3EBC59 2px, rgba(242, 153, 74, 0) 0),
-    linear-gradient(0deg, rgba(0, 0, 0, .26) 1px, transparent 0) !important;
-  }
-  .form-group.line-light {
-    background-image: linear-gradient(0deg, #acacac 2px, rgba(242, 153, 74, 0) 0),
-    linear-gradient(0deg, rgba(0, 0, 0, .26) 1px, transparent 0) !important;
-  }
-  label {
-    color: $textGreyLight !important;
-  }
-
-  //Botões
-  .btn {
-    &.btn-default {
-      background-color: $gray;
-      color: $white;
-      &:hover {
-        background-color: $mainClr;
+  #marvel-row {
+    div {
+      a img {
+        width: 400px;
       }
     }
 
-    &.btn-orange {
-      background-color: $mainClr;
-      color: $white;
-    }
-
-    &.slim {
-      padding: 2px 10px;
-    }
   }
-
-  //Dark box
-  .greydark {
-    background-color: $grayDark;
-    color: $textLight;
-
-    .border-bottom,
-    &.border-bottom {
-      border-bottom: solid 1px $textGreyLight !important;
-    }
-    .border-top,
-    &.border-top {
-      border-top: solid 1px $textGreyLight !important;
-    }
-
-    .nav-link {
-      color: $textLight;;
-      &.active {
-        color: $mainClr;
-      }
-    }
-    .nav-tabs {
-      border-bottom: solid 1px $textGreyLight;
-    }
-  }
-
-  //Vertical align
-  .v-align {
-    display: flex;
-    flex-wrap: wrap;
-    height: 100%;
-
-    .top {
-      align-self: flex-start;
-    }
-    .bottom {
-      align-self: flex-end;
-    }
-  }
-}
-
-/** CONTENT **/
-//Tab nav
-.nav-tabs .nav-link {
-  border-bottom: solid 1px transparent;
-  height: 50px;
-  &.active,
-  &:hover {
-    border-bottom: solid 1px $mainClr;
-  }
-}
