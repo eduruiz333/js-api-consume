@@ -2,59 +2,101 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>API Consume</title>
+    <title>Marvel API Heroes</title>
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
     
     <link rel="stylesheet" href="assets/styles/bootstrap.css">
     <link rel="stylesheet" href="assets/styles/bootstrap-material-design.min.css">
+    <link rel="stylesheet" href="assets/styles/jquery.fancybox.min.css">
     <link rel="stylesheet" href="assets/styles/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
 
     <script type="text/javascript" src="assets/scripts/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="assets/scripts/jquery.fancybox.min.js"></script>
 </head>
 <body>
 
-<div class="container">
-    <header class="banner">
-        <div class="row header d-flex align-items-md-end justify-content-center" style="background-image: url('assets/images/binary_code.jpg');">
-            <div class="col-12 col-md-8">
-                <h2 class="text-white font-weight-bolder">Excelsior!!</h2>
+<section>
+    <div class="container">
+        <header class="banner">
+            <div class="row header d-flex align-items-md-end justify-content-center" style="background-image: url('assets/images/Marvel-heroes-2015-Topo.jpg');">
+                <div class="col-12 col-md-8">
+                    <h1 class="text-white text-center">EXCELSIOR!</h1>
+                </div>
             </div>
-            <div class="logo-header col-12 col-md-4 text-center">
-                <a href="/" title="Logo">
-                    <img src="assets/images/logo.png" alt="Aqui vai o logo">
-                </a>
-            </div>
-        </div>
-    </header>
-</div>
+        </header>
+    </div>
+</section>
 
-<div class="container pb-4">
-    <main>
-        <div class="row">
-            <div class="col-12">
-                <div class="card mt-n4 mb-4">
-                    <div class="card-body">
-                        <div class="row p-5" id="marvel-row">
-                            
+<section>
+    <div class="container pb-4">
+        <main>
+            <div class="row">
+                <div class="col-12">
+                    <div class="card mt-n4 mb-4 main-card">
+                        <div class="card-body">
+                            <div class="row p-5" id="marvel-row">
+                            <!--Content API-->
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </main>
-</div>
+        </main>
+    </div>
+</section>
 
-<div class="container">
-    <footer>
-        <div class="row greydark border-top px-5 px-md-4 pt-4 pb-0">
-            <div class="col-12 mb-4 overflow-hidden">
-                <h5 class="text-center text-lg-left">FOOTER</h5>
+<section>
+    <div class="container">
+        <footer>
+            <div class="row greydark px-5 px-md-4 pt-5 pb-0">
+                <div class="col-12 col-md-6 overflow-hidden">
+                    <div class="row left">
+                        <div class="col">
+                            <img class="img-thumbnail float-left" src="assets/images/ant-manthewasp_lob_crd_01.jpg" alt="Ant man">
+                            <h4>About MCU</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum convallis nisi, id venenatis orci ullamcorper in. Quisque tortor sapien, tristique vitae sem egestas, dictum venenatis ligula. Quisque sed facilisis magna, et gravida tellus. Sed semper mollis felis, et consectetur erat ultrices vel.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum convallis nisi, id venenatis orci ullamcorper in. Quisque tortor sapien, tristique vitae sem egestas, dictum venenatis ligula. Quisque sed facilisis magna, et gravida tellus. Sed semper mollis felis, et consectetur erat ultrices vel.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 overflow-hidden">
+                    <h4>Releases</h4>
+                    <div class="photo-gallery">
+                        <a data-fancybox="gallery" href="assets/images/1.jpg">
+                            <img src="assets/images/1.jpg" alt="Foto 1">
+                        </a>
+                        <a data-fancybox="gallery" href="assets/images/2.jpg">
+                            <img src="assets/images/2.jpg" alt="Foto 2">
+                        </a>
+                        <a data-fancybox="gallery" href="assets/images/3.jpg">
+                            <img src="assets/images/3.jpg" alt="Foto 3">
+                        </a>
+                        <a data-fancybox="gallery" href="assets/images/4.jpg">
+                            <img src="assets/images/4.jpg" alt="Foto 4">
+                        </a>
+                        <a data-fancybox="gallery" href="assets/images/5.jpg">
+                            <img src="assets/images/5.jpg" alt="Foto 5">
+                        </a>
+                        <a data-fancybox="gallery" href="assets/images/6.jpg">
+                            <img src="assets/images/6.jpg" alt="Foto 6">
+                        </a>
+                        <a data-fancybox="gallery" href="assets/images/logo-marvel.jpg">
+                            <img src="assets/images/logo-marvel.jpg" alt="Logo Marvel">
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div>
-    </footer>
-</div>
+            <div class="row greydark border-top px-5 px-md-4 pt-4 pb-0">
+                <div class="col-12 mb-4 overflow-hidden">
+                    <h5 class="text-center text-lg-left"> ® Marvel 2019</h5>
+                </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</section>
 
 <script type="text/javascript" src="assets/scripts/popper.min.js"></script>
 <script type="text/javascript" src="assets/scripts/bootstrap.min.js"></script>

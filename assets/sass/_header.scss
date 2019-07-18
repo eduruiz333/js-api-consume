@@ -9,16 +9,6 @@
     box-sizing: border-box;
     background-size: cover;
     padding-bottom: 70px;
-    display: flex;
-    flex-grow: 1;
-    flex-direction: row;
-    align-items: flex-end;
-
-    .logo-header {
-      a img {
-        width: 120px;
-      }
-    }
   }
 }
 
