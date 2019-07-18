@@ -1,22 +1,30 @@
-const getAPI = {
-    print:() => {
-        const urlAPI = 'https://gateway.marvel.com/v1/public/characters?ts=1&apikey=a9ede7a730f33a8c23f8d8a18f99b686&hash=73621f0299923fc5dc40f14af8614930';
-        const container = document.querySelector('#marvel-row');
-        let contentHTML = '';
+const api_marvel = {
 
-        fetch(urlAPI)
+    print:() => {
+        const API = 'https://gateway.marvel.com/v1/public/characters?ts=1&apikey=a9ede7a730f33a8c23f8d8a18f99b686&hash=73621f0299923fc5dc40f14af8614930';
+        const content = document.querySelector('#marvel-row');
+        let putInfos = '';
+
+        // API request
+        fetch(API)
+
+        // Promisses
         .then(res => res.json())
         .then((json) => {
 
+            // JSON data - iterations
             for (const hero of json.data.results) {
-                let urlHero = hero.urls[0].url;
+                let heroes = hero.urls[0].url;
                 let description = hero.description;
+
                 if (description === '') {
                     description = 'Sorry, description not available :-('
                 }
-                contentHTML += `
+
+                // Writing HTML loop...
+                putInfos += `
                     <div class="col-12 mx-auto">
-                        <a href="${urlHero}" target="_blank">
+                        <a href="${heroes}" target="_blank">
                             <img src="${hero.thumbnail.path}.${hero.thumbnail.extension}" alt="${hero.name}" class="img-thumbnail">
                         </a>
                         <h3 class="title">${hero.name}</h3>
@@ -24,9 +32,8 @@ const getAPI = {
                     </div>
                 `;
             }
-            container.innerHTML = contentHTML;
+            content.innerHTML = putInfos;
         })
     }
 };
-getAPI.print();
-
+api_marvel.print();
